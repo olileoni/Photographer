@@ -1,0 +1,78 @@
+.reportage-photos {
+    &__title {
+      margin-bottom: calc(30px + (53 - 30) * ((100vw - 320px) / (1600 - 320)));
+  }
+      &__text {
+          max-width: 842px;
+          color: $titlesColor;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 140%;
+          margin-bottom: 40px;
+          @media (max-width: $md3) {
+              font-size: 16px;
+              margin-bottom: 30px;
+            } 
+      }
+      &__button {
+          background: $titlesColor;
+          padding: 15px 27px;
+          margin-bottom: calc(50px + (90 - 50) * ((100vw - 320px) / (1600 - 320)));
+          @media (any-hover: hover) {
+              &:hover {
+                color: $titlesColor;
+                background: #fff;
+                border: 3px solid $titlesColor;
+              }
+            }
+            @media (max-width: 620px) {
+              margin-bottom: 30px;
+            }
+      }
+      &-services {
+          background: $bgcolorGray;
+          padding-top: calc(50px + (105 - 50) * ((100vw - 320px) / (1600 - 320)));
+          padding-bottom: calc(50px + (105 - 50) * ((100vw - 320px) / (1600 - 320)));
+          margin-bottom: 40px;
+          &__title {
+              margin-bottom: 40px;
+              @media (max-width: $md3) {
+                  margin-bottom: 30px;
+                }
+          }
+          &__conatiner {
+              display: flex;
+              gap: 150px;
+              @media (max-width: $md3) {
+                  gap: 30px;
+                }
+                @media (max-width: 700px) {
+                  display: block;
+                }
+          }
+      }
+  }
+  
+  .item-services {
+    flex-shrink: 0 1 auto;
+    &:nth-child(1) {
+      @media (max-width: 700px) {
+        margin-bottom: 20px;
+      }
+    }
+      &__description {
+          margin-bottom: 40px;
+          @media (max-width: $md3) {
+              margin-bottom: 30px;
+            }
+      }
+      &__text {
+          color: $titlesColor;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 140%;
+          @media (max-width: $md3) {
+              font-size: 18px;
+            }
+      }
+  }

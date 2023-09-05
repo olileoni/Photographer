@@ -1,0 +1,43 @@
+.location {
+    padding-bottom: 220px;
+    padding-top: 220px;
+    @media (max-width: $md4) {
+        padding-bottom: 119px;
+     }
+    &__title {
+        margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1600 - 320)));
+    }
+    &__description {
+        margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1600 - 320)));
+    }
+    &__inner {
+        display: flex;
+        @media (max-width: 650px) {
+            display: block;
+         }
+    }
+}
+
+.item-location {
+    width: 440px;
+    @media (max-width: 650px) {
+        width: 100%;
+        margin-bottom: 30px;
+     }
+    &:not(:last-child) {
+        margin-right: calc(0px + (60 - 0) * ((100vw - 320px) / (1600 - 320)));
+    }
+    &__title {
+        color: $titlesColor;
+        font-weight: 700;
+        line-height: 140%;
+        margin-bottom: 10px;
+    }
+    &__text {
+        color: $titlesColor;
+        opacity: 0.8;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 140%; 
+    }
+}

@@ -1,0 +1,83 @@
+.footer {
+    background: $titlesColor;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: calc(30px + (40 - 30) * ((100vw - 320px) / (1600 - 320)));
+        margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1600 - 320)));
+        border-top: 1px solid #FFFFFF4D;
+        @media (max-width: $md2) {
+            display: block;
+        }
+    }
+    &__logo {
+        display: block;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 1.08px;
+        text-transform: uppercase;
+        @media (max-width: $md2) {
+            margin-bottom: 30px;
+        }
+    }
+    &__list {
+        display: flex;
+        @media (max-width: $md2) {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 640px) {
+            display: block;
+        }
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: calc(15px + (40 - 15) * ((100vw - 320px) / (1600 - 320)));
+        }
+        @media (max-width: 640px) {
+            &:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__link {
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        transition: 0.3s;
+        @media (any-hover: hover) {
+            &:hover {
+            color: #ffffff;
+            }
+        }
+    }
+    &__city {
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1600 - 320)));
+        @media (max-width: $md4) {
+            display: block;
+        }
+    }
+    &__right,
+    &__map {
+        color: rgba(255, 255, 255, 0.50);
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0.48px;
+    }
+    &__right {
+        @media (max-width: $md4) {
+            margin-bottom: 19px;
+        }
+    }
+}

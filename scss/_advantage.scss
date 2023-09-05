@@ -1,0 +1,109 @@
+.advantage {
+    margin-bottom: calc(70px + (190 - 70) * ((100vw - 320px) / (1600 - 320)));
+    &__title {
+        max-width: 720px;
+        margin-bottom: calc(30px + (35 - 30) * ((100vw - 320px) / (1600 - 320)));
+        @media (max-width: 1330px) {
+            max-width: 500px;
+         }
+         @media (max-width: $md2) {
+            max-width: 374px;
+         }
+    }
+    &__container {
+        background: $titlesColor;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+        @media (max-width: $md2) {
+            gap: 10px;
+         }
+         @media (max-width: 750px) {
+            display: block;
+         }
+    }
+    &__list {
+        padding-top: 47px;
+        margin-right: auto;
+        padding-bottom: 100px;
+        @media (max-width: 720px) {
+            margin-bottom: 50px;
+         }
+    }
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 25px;
+        margin-top: 35px;
+        &:not(:last-child) {
+            border-bottom: 1px solid #FFFFFF33;
+        }
+        &-inner {
+           margin-left: 20px;
+        }
+        &-title {
+        color: #FFF;
+        font-size: 24px;
+        @media (max-width: $md3) {
+            font-size: 20px;
+         }
+        font-weight: 700;
+        line-height: 120%;
+        margin-bottom: 10px;
+        }
+        &-text {
+        color: rgba(255, 255, 255, 0.80);
+        font-weight: 300;
+        line-height: 140%;
+        }
+    }
+    &__image {
+        margin-top: -110px;
+        @media (max-width: 720px) {
+            margin-top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+    }
+    &__title-second {
+        color: #FFF;
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 110%;
+        letter-spacing: 0.96px;
+        margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1600 - 320)));
+        @media (max-width: $maxWidthContainer) {
+            font-size: calc(24px + 8 * ((100vw - 320px) / (1600 - 320)));
+         }
+        @media (max-width: $md3) {
+            letter-spacing: 0.72px;
+         }
+    }
+    &__box {
+        display: flex;
+        padding-bottom: 85px;
+        @media (max-width: 720px) {
+            display: block;
+         }
+        &-item {
+            flex: 1 1 33.33%;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+        &:not(:last-child) {
+            margin-right: calc(30px + (60 - 30) * ((100vw - 320px) / (1600 - 320)));
+        }
+        @media (max-width: 720px) {
+            margin-bottom: 30px;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+         }
+        }
+    }
+}

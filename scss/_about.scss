@@ -1,0 +1,104 @@
+.about {
+    &__container {
+        display: flex;
+        gap: 49px;
+        @media (max-width: 620px) {
+            display: block;
+          }
+    }
+    &__title {
+      margin-bottom: calc(30px + (53 - 30) * ((100vw - 320px) / (1600 - 320)));
+  }
+    &__greetings {
+        max-width: 842px;
+        color: $titlesColor;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        @media (max-width: $md3) {
+            font-size: 16px;
+          }
+        p {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 620px) {
+            max-width: 100%;
+          }
+    }
+    &__button {
+      margin-top: 30px;
+        background: $titlesColor;
+        padding: 14px 26px;
+        @media (any-hover: hover) {
+            &:hover {
+              color: $titlesColor;
+              background: #fff;
+              border: 3px solid $titlesColor;
+            }
+          }
+          @media (max-width: 1150px) {
+           margin-bottom: 30px;
+          }
+          @media (max-width: 620px) {
+            margin-bottom: 30px;
+          }
+          @media (max-width: $md4) {
+            width: 100%;
+          }
+    }
+    &__image {
+      margin-top: -100px;
+        @media (max-width: 620px) {
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
+          }
+    }
+    &__inner {
+      margin-top: -50px;
+      background: $bgcolorGray;
+      @media (max-width: 1150px) {
+        margin-top: 0;
+      }
+    }
+    &__body {
+        display: flex;
+        gap: 85px;
+        padding-top: 170px;
+        padding-bottom: 120px;
+        @media (max-width: 1150px) {
+          padding-top: 70px;
+          padding-bottom: 50px;
+        }
+        margin-bottom: calc(70px + (190 - 70) * ((100vw - 320px) / (1600 - 320)));
+        @media (max-width: $md2) {
+            gap: 30px;
+          }
+          @media (max-width: 620px) {
+            display: block;
+          }
+    }
+    &__item {
+      max-width: 664px;
+        @media (max-width: 620px) {
+            &:first-child {
+                margin-bottom: 30px;
+            }
+          }
+    }
+    &__description {
+        margin-bottom: 40px;
+        @media (max-width: $md3) {
+            margin-bottom: 30px;
+          }
+    }
+    &__text {
+        color: $titlesColor;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+        @media (max-width: $md3) {
+            font-size: 18px;
+          }
+    }
+}

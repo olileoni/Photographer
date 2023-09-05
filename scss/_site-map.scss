@@ -1,0 +1,21 @@
+.site-map {
+    &__title {
+        margin-top: calc(50px + (105 - 50) * ((100vw - 320px) / (1600 - 320)));
+        margin-bottom: calc(30px + (80 - 30) * ((100vw - 320px) / (1600 - 320)));
+    }
+    &__list {
+        margin-bottom: calc(80px + (120 - 80) * ((100vw - 320px) / (1600 - 320)));
+    }
+    &__item {
+        list-style-type: disc;
+    }
+    &__link {
+        display: block;
+        color: $titlesColor;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 110%;
+        letter-spacing: 0.72px;
+        margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (1600 - 320)));
+    }
+}

@@ -1,0 +1,40 @@
+.help {
+    margin-top: -50px;
+    background: $bgcolorGray;
+    padding-top: calc(80px + (170 - 80) * ((100vw - 320px) / (1600 - 320)));
+    @media (max-width: $md3) {
+        margin-top: 20px;
+    }
+    &__title {
+        margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1600 - 320)));
+    }
+    &__description {
+        margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1600 - 320)));
+    }
+    &__text-inner {
+        display: flex;
+        padding-bottom: calc(20px + (50 - 20) * ((100vw - 320px) / (1600 - 320)));
+        gap: calc(20px + (60 - 20) * ((100vw - 320px) / (1600 - 320)));
+        @media (max-width: $md4) {
+            display: block;
+        }
+    }
+    &__text {
+        flex: 1 1 50%;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+        color: $titlesColor;
+        @media (max-width: $maxWidthContainer) {
+            font-size: calc(18px + 2 * ((100vw - 320px) / (1600 - 320)));
+        }
+        @media (max-width: $md3) {
+            max-width: 364px;
+        }
+        @media (max-width: $md4) {
+            &:nth-child(1) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

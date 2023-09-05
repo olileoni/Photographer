@@ -1,0 +1,198 @@
+.hero {
+    &__container {
+        display: flex;
+        gap: 60px;
+        @media (max-width: 720px) {
+            display: block;
+        }
+    }
+    &__title {
+        max-width: 1200px;
+        position: absolute;
+        top: 220px;
+        z-index: 3;
+        span {
+            color: #fff;
+        }
+        @media (max-width: 2000px) {
+            font-size: calc(22px + 50 * ((100vw - 320px) / (1600 - 320)));
+        }
+        @media (max-width: 1160px) {
+            top: 120px;
+          }
+          @media (max-width: $md2) {
+            max-width: 550px;
+          }
+          @media (max-width: 720px) {
+            position: static;
+            max-width: 100%;
+            margin-top: 50px;
+            span {
+                color:$titlesColor;
+            }
+        }
+    }
+    &__desc {
+        padding-top: 340px;
+        color: $titlesColor;
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 110%;
+        letter-spacing: 0.96px;
+        margin-bottom: 100px;
+        @media (max-width: 1200px) {
+            font-size: calc(20px + 3 * ((100vw - 320px) / (1600 - 320)));
+        }
+        @media (max-width: 1160px) {
+            padding-top: 200px;
+            margin-bottom: 50px;
+          }
+          @media (max-width: 720px) {
+            padding-top: 30px;
+            margin-bottom: 30px;
+          }
+    }
+    &__text {
+        position: absolute;
+        left: 800px;
+        max-width: 460px;
+        color: $titlesColor;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 40px;
+        &-business {
+          position: absolute;
+          top: 700px;
+          left: 500px;
+          max-width: 460px;
+          color: $titlesColor;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 140%;
+          margin-bottom: 40px;
+          @media (max-width: 2560px) {
+            left: 800px;
+          }
+          @media (max-width: 2300px) {
+            left: 500px;
+          }
+          @media (max-width: 1740px) {
+            left: 200px;
+          }
+          @media (max-width: 1275px) {
+            left: 80px;
+          }
+          @media (max-width: 1160px) {
+            position: static;
+            margin-top: 180px;
+          }
+          @media (max-width: 720px) {
+            max-width: 100%;
+            margin-top: 40px;
+          }
+
+        }
+        @media (max-width: 2300px) {
+            left: 500px;
+        }
+        @media (max-width: 1740px) {
+            left: 200px;
+        }
+        @media (max-width: 1275px) {
+          left: 80px;
+        }
+        @media (max-width: 1160px) {
+          position: static;
+        }
+        @media (max-width: $md2) {
+            font-size: 16px;
+        }
+        @media (max-width: 720px) {
+            max-width: 100%;
+        }
+
+    }
+    &__button {
+        position: absolute;
+        left: 800px;
+        top: 680px;
+        background: $titlesColor;
+        padding: 16px 28px;
+        @media (any-hover: hover) {
+            &:hover {
+              color: $titlesColor;
+              background: #fff;
+              border: 3px solid $titlesColor;
+            }
+          }
+          @media (max-width: 2300px) {
+            left: 500px;
+          }
+          @media (max-width: 1740px) {
+            left: 200px;
+        }
+        @media (max-width: 1275px) {
+            left: 80px;
+        }
+        @media (max-width: 1160px) {
+            position: static;
+          }
+    }
+    &__button-business {
+      top: 800px;
+    }
+    &__images {
+       margin-left: auto;
+       @media (max-width: 1160px) {
+        display: none;
+      }
+    }
+    &__images-box {
+        display: flex;
+        gap: 10px;
+    }
+    &__images-media {
+        display: none;
+
+        @media (max-width: 1160px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+          @media (max-width: 830px) {
+            max-width: 400px;
+          }
+          @media (max-width: 720px) {
+            max-width: 100%;
+          }
+    }
+    &__image_first {
+        position: relative;
+        z-index: 2;
+        border-right: 20px solid #fff;
+        border-bottom: 20px solid #fff;
+        @media (max-width: 1160px) {
+            border-right: none;
+            border-bottom: none;
+            margin-left: auto;
+          }
+    }
+    &__image_third {
+        margin-top: -85px;
+        margin-left: auto;
+        @media (max-width: 1160px) {
+           margin-top: 0;
+           margin-left: 0;
+          }
+    }
+}
+
+.business-title {
+    top: 400px;
+    @media (max-width: 1160px) {
+      top: 200px;
+    }
+
+}
+

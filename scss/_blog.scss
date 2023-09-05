@@ -1,0 +1,54 @@
+.blog {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        margin-bottom: calc(30px + (60 - 30) * ((100vw - 320px) / (1600 - 320)));
+        @media (max-width: 1500px) {
+            gap: 20px;
+        }
+    }
+    &__title {
+        margin-bottom: calc(30px + (70 - 30) * ((100vw - 320px) / (1600 - 320)));
+    }
+    &__button {
+        padding-bottom: calc(70px + (280 - 70) * ((100vw - 320px) / (1600 - 320)));
+    }
+}
+
+.card-blog {
+    max-width: 440px;
+    margin-bottom: 20px;
+    img {
+        @media (max-width: 596px) {
+            width: 100%;
+        }
+    }
+    @media (max-width: $md2) {
+        max-width: 350px;
+    }
+    @media (max-width: 757px) {
+        max-width: 270px;
+    }
+    @media (max-width: 596px) {
+        max-width: 100%;
+    }
+    &__title {
+        color: $titlesColor;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 120%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        @media (max-width: $md3) {
+            font-size: 18px;
+        }
+    }
+    &__text {
+        color: rgba(30, 30, 30, 0.80);
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 140%;
+    }
+}
