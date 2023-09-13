@@ -40,9 +40,6 @@
                                     <a href="../pages/rewiews.html" class="header__link">Отзывы</a>
                                 </li>
                                 <li class="header__item">
-                                    <a href="../pages/blog.html" class="header__link">Блог</a>
-                                </li>
-                                <li class="header__item">
                                     <a href="../pages/contacts.html" class="header__link">Контакты</a>
                                 </li>
                             </ul>
@@ -243,13 +240,19 @@
                             <h3 class="call-form__title">Заказать обратный звонок</h3>
                             <div class="call-form__inputs">
                                 <input type="text" class="call-form__input" placeholder="Имя">
-                                <input type="tel" class="call-form__input" placeholder="Телефон*">
+                                <input type="tel" class="call-form__input" id="tel" placeholder="Телефон*" required>
                             </div>
                             <div class="call-form__box">
                                 <button class="call-form__button btn">Отправить</button>
                                 <p class="call-form__text">Нажимая «Отправить», вы соглашаетесь с <a href="#">политикой
                                         конфиденциальности</a></p>
                             </div>
+                            <svg class="line-fifth" xmlns="http://www.w3.org/2000/svg" width="1368" height="306"
+                                viewBox="0 0 1368 306" fill="none">
+                                <path opacity="0.2"
+                                    d="M717.037 305.545C777.045 274.85 880.803 168.223 842.402 93.1518C776.914 -34.8754 34.7394 -37.3616 1.47517 132.639C-37.9255 334.001 1171.11 172.821 1367.58 94.0682"
+                                    stroke="white" />
+                            </svg>
                         </form>
                         <div class="call-form__image wow fadeIn">
                             <img src="../assets/img/form-image.jpg" alt="Заказать обратный звонок">
@@ -299,7 +302,13 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__container">
-                    <a href="../index.html" class="footer__logo">Scherbakov</a>
+                    <a href="../index.html" class="logo-footer__link">
+                        <img src="../assets/svg/main-logo.svg" alt="Эдуард щербаков" class="logo-header__img">
+                        <div class="logo-footer__text">
+                            <p class="logo-footer__text-first">Фотограф</p>
+                            <p class="logo-footer__text-second">Эдуард щербаков</p>
+                        </div>
+                    </a>
                     <nav class="footer__nav">
                         <ul class="footer__list">
                             <li class="footer__item">
@@ -313,9 +322,6 @@
                             </li>
                             <li class="footer__item">
                                 <a href="../pages/rewiews.html" class="footer__link">Отзывы</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="../pages/blog.html" class="footer__link">Блог</a>
                             </li>
                             <li class="footer__item">
                                 <a href="../pages/contacts.html" class="footer__link">Контакты</a>
@@ -336,6 +342,9 @@
         new WOW().init();
     </script>
     <script src="../libs/masonry/masonry.min.js"></script>
+    <script src="../libs/JustValidate/just-validate.production.min.js"></script>
+    <script src="../libs/inputmask/inputmask.min.js"></script>
+    <script src="../components/validate.js"></script>
     <script src="../libs/masonry/masonry.js"></script>
     <script src="../components/burger.js"></script>
 </body>

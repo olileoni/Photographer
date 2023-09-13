@@ -35,7 +35,6 @@
                                 </li>
                                 <li class="header__item"><a href="../pages/rewiews.html" class="header__link">Отзывы</a>
                                 </li>
-                                <li class="header__item"><a href="../pages/blog.html" class="header__link">Блог</a></li>
                                 <li class="header__item"><a href="../pages/contacts.html"
                                         class="header__link">Контакты</a></li>
                             </ul>
@@ -236,7 +235,7 @@
                             <h3 class="call-form__title">Заказать обратный звонок</h3>
                             <div class="call-form__inputs">
                                 <input type="text" class="call-form__input" placeholder="Имя">
-                                <input type="tel" class="call-form__input" placeholder="Телефон*">
+                                <input type="tel" class="call-form__input" id="tel" placeholder="Телефон*" required>
                             </div>
                             <div class="call-form__box">
                                 <button class="call-form__button btn">Отправить</button>
@@ -291,7 +290,13 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__container">
-                    <a href="../index.html" class="footer__logo">Scherbakov</a>
+                    <a href="../index.html" class="logo-footer__link">
+                        <img src="../assets/svg/main-logo.svg" alt="Эдуард щербаков" class="logo-header__img">
+                        <div class="logo-footer__text">
+                            <p class="logo-footer__text-first">Фотограф</p>
+                            <p class="logo-footer__text-second">Эдуард щербаков</p>
+                        </div>
+                    </a>
                     <nav class="footer__nav">
                         <ul class="footer__list">
                             <li class="footer__item"><a href="../pages/business.html"
@@ -301,7 +306,6 @@
                             <li class="footer__item"><a href="../pages/about.html" class="footer__link">Обо мне</a></li>
                             <li class="footer__item"><a href="../pages/rewiews.html" class="footer__link">Отзывы</a>
                             </li>
-                            <li class="footer__item"><a href="../pages/blog.html" class="footer__link">Блог</a></li>
                             <li class="footer__item"><a href="../pages/contacts.html" class="footer__link">Контакты</a>
                             </li>
                         </ul>
@@ -316,6 +320,9 @@
         </footer>
     </div>
     <script src="../components/burger.js"></script>
+    <script src="../libs/JustValidate/just-validate.production.min.js"></script>
+    <script src="../libs/inputmask/inputmask.min.js"></script>
+    <script src="../components/validate.js"></script>
 </body>
 
 </html>

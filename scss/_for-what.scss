@@ -4,7 +4,6 @@
         padding-bottom: 120px;
     }
     &__title {
-        padding-top: 220px;
         margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1600 - 320)));
     }
     &__description {
@@ -26,7 +25,7 @@
        margin-bottom: 30px;
     }
     &__num {
-        color: rgba(30, 30, 30, 0.20);
+        color: rgba(30, 30, 30, 0.08);
         font-size: 91px;
         font-weight: 800;
         letter-spacing: 2.73px;

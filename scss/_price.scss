@@ -1,5 +1,8 @@
 .main-price {
     padding-bottom: calc(80px + (190 - 80) * ((100vw - 320px) / (1600 - 320)));
+    &__content {
+        position: relative;
+    }
     &__title {
         position: relative;
         padding-top: 220px;
@@ -26,6 +29,7 @@
         flex-direction: column;
         height: auto;
         flex: 1 1 25%;
+        cursor: pointer;
         @media (max-width: 1100px) {
             min-width: 242px;
         }
@@ -38,6 +42,7 @@
     padding: 30px 30px;
     border: 10px solid transparent;
     transition: 0.3s;
+    cursor: pointer;
     @media (any-hover: hover) {
         &:hover {
             border: 10px solid rgba(30, 30, 30, 0.05);
@@ -122,6 +127,9 @@
             gap: 0;
         }
     }
+    &__box {
+        position: relative;
+    }
     &__item {
         display: flex;
         height: auto;
@@ -148,4 +156,5 @@
 .swiper-pagination-progressbar-fill {
     background: $titlesColor !important;
 }
+
 

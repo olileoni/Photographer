@@ -1,4 +1,5 @@
 .hero {
+  padding-top: 65px;
     &__container {
         display: flex;
         gap: 60px;
@@ -9,7 +10,7 @@
     &__title {
         max-width: 1200px;
         position: absolute;
-        top: 220px;
+        top: 270px;
         z-index: 3;
         span {
             color: #fff;
@@ -19,6 +20,9 @@
         }
         @media (max-width: 1160px) {
             top: 120px;
+            span {
+              color: $titlesColor;
+            }
           }
           @media (max-width: $md2) {
             max-width: 550px;
@@ -39,7 +43,8 @@
         font-weight: 800;
         line-height: 110%;
         letter-spacing: 0.96px;
-        margin-bottom: 100px;
+        line-height: 140%;
+        margin-bottom: 60px;
         @media (max-width: 1200px) {
             font-size: calc(20px + 3 * ((100vw - 320px) / (1600 - 320)));
         }
@@ -60,7 +65,7 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 140%;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         &-business {
           position: absolute;
           top: 700px;
@@ -116,7 +121,7 @@
     &__button {
         position: absolute;
         left: 800px;
-        top: 680px;
+        top: 730px;
         background: $titlesColor;
         padding: 16px 28px;
         @media (any-hover: hover) {
@@ -143,6 +148,7 @@
       top: 800px;
     }
     &__images {
+      position: relative;
        margin-left: auto;
        @media (max-width: 1160px) {
         display: none;
@@ -150,10 +156,10 @@
     }
     &__images-box {
         display: flex;
-        gap: 10px;
     }
     &__images-media {
         display: none;
+        margin-top: 120px;
 
         @media (max-width: 1160px) {
             display: flex;
@@ -170,6 +176,7 @@
     &__image_first {
         position: relative;
         z-index: 2;
+        margin-top: -50px;
         border-right: 20px solid #fff;
         border-bottom: 20px solid #fff;
         @media (max-width: 1160px) {
@@ -179,7 +186,7 @@
           }
     }
     &__image_third {
-        margin-top: -85px;
+        margin-top: -54px;
         margin-left: auto;
         @media (max-width: 1160px) {
            margin-top: 0;
@@ -189,10 +196,11 @@
 }
 
 .business-title {
-    top: 400px;
+    top: 300px;
     @media (max-width: 1160px) {
-      top: 200px;
+      top: 110px;
     }
 
 }
+
 

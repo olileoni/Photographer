@@ -1,9 +1,12 @@
 .advantage {
     margin-bottom: calc(70px + (190 - 70) * ((100vw - 320px) / (1600 - 320)));
+    &__box {
+        position: relative;
+    }
     &__title {
-        max-width: 720px;
+        max-width:720px;
         margin-bottom: calc(30px + (35 - 30) * ((100vw - 320px) / (1600 - 320)));
-        @media (max-width: 1330px) {
+        @media (max-width: 1440px) {
             max-width: 500px;
          }
          @media (max-width: $md2) {
@@ -107,3 +110,4 @@
         }
     }
 }
+

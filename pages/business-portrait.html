@@ -41,9 +41,6 @@
                                     <a href="../pages/rewiews.html" class="header__link">Отзывы</a>
                                 </li>
                                 <li class="header__item">
-                                    <a href="../pages/blog.html" class="header__link">Блог</a>
-                                </li>
-                                <li class="header__item">
                                     <a href="../pages/contacts.html" class="header__link">Контакты</a>
                                 </li>
                             </ul>
@@ -255,35 +252,50 @@
                 </div>
             </section>
             <section class="bp-examples wow fadeIn" data-wow-duration="2s">
-                <div class="container">
+                <div class="bp-examples__inner">
                     <h3 class="bp-examples__title medium-title">Примеры работ</h3>
                     <div class="bp-examples__container">
                         <a href="../pages/bp-in.html" class="bp-examples__item bp-examples__item_first wow fadeIn">
-                            <img src="../assets/img/business-portrait-1.jpg" alt="Примеры работ">
+                            <div class="bp-examples__image">
+                                <img src="../assets/img/business-portrait-1.jpg" alt="Примеры работ">
+                            </div>
                             <p class="bp-examples__desc">Евгений</p>
                         </a>
                         <a href="../pages/bp-in.html" class="bp-examples__item bp-examples__item_second wow fadeIn">
-                            <img src="../assets/img/business-portrait-2.jpg" alt="Примеры работ">
+                            <div class="bp-examples__image">
+                                <img src="../assets/img/business-portrait-2.jpg" class="bp-examples__image"
+                                    alt="Примеры работ">
+                            </div>
                             <p class="bp-examples__desc">Анатолий и Яков</p>
                         </a>
                         <a href="../pages/bp-in.html" class="bp-examples__item bp-examples__item_third wow fadeIn">
-                            <img src="../assets/img/business-portrait-3.jpg" alt="Примеры работ">
+                            <div class="bp-examples__image">
+                                <img src="../assets/img/business-portrait-3.jpg" alt="Примеры работ">
+                            </div>
                             <p class="bp-examples__desc">Евгений</p>
                         </a>
                         <a href="../pages/bp-in.html" class="bp-examples__item bp-examples__item_fourth wow fadeIn">
-                            <img src="../assets/img/business-portrait-4.jpg" alt="Примеры работ">
+                            <div class="bp-examples__image">
+                                <img src="../assets/img/business-portrait-4.jpg" alt="Примеры работ">
+                            </div>
                             <p class="bp-examples__desc">Кристина</p>
                         </a>
                         <a href="../pages/bp-in.html" class="bp-examples__item bp-examples__item_fifth wow fadeIn">
-                            <img src="../assets/img/business-portrait-5.jpg" alt="Примеры работ">
+                            <div class="bp-examples__image">
+                                <img src="../assets/img/business-portrait-5.jpg" alt="Примеры работ">
+                            </div>
                             <p class="bp-examples__desc">Анастасия</p>
                         </a>
                         <a href="../pages/bp-in.html" class="bp-examples__item bp-examples__item_sixth wow fadeIn">
-                            <img src="../assets/img/business-portrait-6.jpg" alt="Примеры работ">
+                            <div class="bp-examples__image">
+                                <img src="../assets/img/business-portrait-6.jpg" alt="Примеры работ">
+                            </div>
                             <p class="bp-examples__desc">Royal Court</p>
                         </a>
                         <a href="../pages/bp-in.html" class="bp-examples__item bp-examples__item_seventh wow fadeIn">
-                            <img src="../assets/img/business-portrait-7.jpg" alt="Примеры работ">
+                            <div class="bp-examples__image">
+                                <img src="../assets/img/business-portrait-7.jpg" alt="Примеры работ">
+                            </div>
                             <p class="bp-examples__desc">Максим и Александр</p>
                         </a>
                     </div>
@@ -516,7 +528,7 @@
                                     <img src="../assets/img/reviews-1.jpg" alt="Что говорят клиенты"
                                         class="reviews-slider__image-img">
                                     <img src="../assets/svg/icon-quotes.svg" alt="Что говорят клиенты"
-                                        class="reviews-slider__image-quotes wow fadeIn" data-wow-duration="5s">
+                                        class="reviews-slider__image-quotes">
                                 </div>
                                 <div class="reviews-slider__text wow fadeInRight">
                                     <p>Получили огромное удовольствие от фотосессии с Эдуардом и Ариной)) Получили
@@ -704,7 +716,7 @@
                             <h3 class="call-form__title">Заказать обратный звонок</h3>
                             <div class="call-form__inputs">
                                 <input type="text" class="call-form__input" placeholder="Имя">
-                                <input type="tel" class="call-form__input" placeholder="Телефон*">
+                                <input type="tel" class="call-form__input" id="tel" placeholder="Телефон*" required>
                             </div>
                             <div class="call-form__box">
                                 <button class="call-form__button btn">Отправить</button>
@@ -760,7 +772,13 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__container">
-                    <a href="../index.html" class="footer__logo">Scherbakov</a>
+                    <a href="../index.html" class="logo-footer__link">
+                        <img src="../assets/svg/main-logo.svg" alt="Эдуард щербаков" class="logo-header__img">
+                        <div class="logo-footer__text">
+                            <p class="logo-footer__text-first">Фотограф</p>
+                            <p class="logo-footer__text-second">Эдуард щербаков</p>
+                        </div>
+                    </a>
                     <nav class="footer__nav">
                         <ul class="footer__list">
                             <li class="footer__item"><a href="../pages/business.html"
@@ -770,7 +788,6 @@
                             <li class="footer__item"><a href="../pages/about.html" class="footer__link">Обо мне</a></li>
                             <li class="footer__item"><a href="../pages/rewiews.html" class="footer__link">Отзывы</a>
                             </li>
-                            <li class="footer__item"><a href="../pages/blog.html" class="footer__link">Блог</a></li>
                             <li class="footer__item"><a href="../pages/contacts.html" class="footer__link">Контакты</a>
                             </li>
                         </ul>
@@ -791,6 +808,9 @@
     <script src="../libs/masonry/masonry.min.js"></script>
     <script src="../libs/swiper/swiper-bundle.min.js"></script>
     <script src="../libs/masonry/masonry.js"></script>
+    <script src="../libs/JustValidate/just-validate.production.min.js"></script>
+    <script src="../libs/inputmask/inputmask.min.js"></script>
+    <script src="../components/validate.js"></script>
     <script src="../components/price-slider.js"></script>
     <script src="../components/rewiews-slider.js"></script>
     <script src="../components/burger.js"></script>

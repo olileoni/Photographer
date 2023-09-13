@@ -33,7 +33,6 @@
                     фотосессия</a></li>
                 <li class="header__item"><a href="../pages/about.html" class="header__link">Обо мне</a></li>
                 <li class="header__item"><a href="../pages/rewiews.html" class="header__link">Отзывы</a></li>
-                <li class="header__item"><a href="../pages/blog.html" class="header__link">Блог</a></li>
                 <li class="header__item"><a href="../pages/contacts.html" class="header__link">Контакты</a></li>
               </ul>
               <div class="header__contacts-media contacts-media">
@@ -248,9 +247,18 @@
       </section>
       <section class="price wow fadeIn" data-wow-duration="2s">
         <div class="container">
-          <h3 class="price__title medium-title">Стоимость фотосъемки</h3>
-          <p class="price__text">Я приезжаю с мобильной фотостудией, ставлю свет и фон или нахожу подходяющую студию для
-            съемки</p>
+          <div class="price__box">
+            <h3 class="price__title medium-title">Стоимость фотосъемки</h3>
+            <p class="price__text">Я приезжаю с мобильной фотостудией, ставлю свет и фон или нахожу подходяющую студию
+              для
+              съемки</p>
+            <svg class="line-sixth" xmlns="http://www.w3.org/2000/svg" width="1160" height="260" viewBox="0 0 1160 260"
+              fill="none">
+              <path opacity="0.2"
+                d="M715 258.861C766.15 229.455 818.476 189.485 772.953 110.301C695.319 -24.7391 45.1642 -49.0186 3.41065 118.156C-54.0785 348.333 1086.6 205.637 1257 131.861"
+                stroke="black" />
+            </svg>
+          </div>
           <div class="swiper price-slider-3">
             <div class="price__container swiper-wrapper">
               <div class="price__item item-price wow fadeInLeft swiper-slide">
@@ -296,7 +304,15 @@
       </section>
       <section class="advantage wow fadeIn" data-wow-duration="2s">
         <div class="container">
-          <h3 class="advantage__title medium-title">Несколько фактов почему клиенты выбирают меня</h3>
+          <div class="advantage__box">
+            <h3 class="advantage__title medium-title">Несколько фактов почему клиенты выбирают меня</h3>
+            <svg class="line-third" xmlns="http://www.w3.org/2000/svg" width="1020" height="151" viewBox="0 0 1020 151"
+              fill="none">
+              <path opacity="0.2"
+                d="M-49.5 122.497C238.5 146.33 741.5 176.497 741.5 64.4972C741.5 -16.501 20.5 -31.8781 20.5 91C20.5 193.503 914.5 134 1019.5 122.497"
+                stroke="black" />
+            </svg>
+          </div>
         </div>
         <div class="advantage__container">
           <div class="container">
@@ -441,7 +457,7 @@
                 <div class="reviews-slider__image wow fadeInLeft">
                   <img src="../assets/img/reviews-1.jpg" alt="Что говорят клиенты" class="reviews-slider__image-img">
                   <img src="../assets/svg/icon-quotes.svg" alt="Что говорят клиенты"
-                    class="reviews-slider__image-quotes wow fadeIn" data-wow-duration="5s">
+                    class="reviews-slider__image-quotes">
                 </div>
                 <div class="reviews-slider__text wow fadeInRight">
                   <p>Получили огромное удовольствие от фотосессии с Эдуардом и Ариной)) Получили
@@ -622,13 +638,19 @@
               <h3 class="call-form__title">Заказать обратный звонок</h3>
               <div class="call-form__inputs">
                 <input type="text" class="call-form__input" placeholder="Имя">
-                <input type="tel" class="call-form__input" placeholder="Телефон*">
+                <input type="tel" class="call-form__input" id="tel" placeholder="Телефон*" required>
               </div>
               <div class="call-form__box">
                 <button class="call-form__button btn">Отправить</button>
                 <p class="call-form__text">Нажимая «Отправить», вы соглашаетесь с <a href="#">политикой
                     конфиденциальности</a></p>
               </div>
+              <svg class="line-fifth" xmlns="http://www.w3.org/2000/svg" width="1368" height="306"
+                viewBox="0 0 1368 306" fill="none">
+                <path opacity="0.2"
+                  d="M717.037 305.545C777.045 274.85 880.803 168.223 842.402 93.1518C776.914 -34.8754 34.7394 -37.3616 1.47517 132.639C-37.9255 334.001 1171.11 172.821 1367.58 94.0682"
+                  stroke="white" />
+              </svg>
             </form>
             <div class="call-form__image wow fadeIn">
               <img src="../assets/img/form-image.jpg" alt="Заказать обратный звонок">
@@ -674,7 +696,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__container">
-          <a href="../index.html" class="footer__logo">Scherbakov</a>
+          <a href="../index.html" class="logo-footer__link">
+            <img src="../assets/svg/main-logo.svg" alt="Эдуард щербаков" class="logo-header__img">
+            <div class="logo-footer__text">
+              <p class="logo-footer__text-first">Фотограф</p>
+              <p class="logo-footer__text-second">Эдуард щербаков</p>
+            </div>
+          </a>
           <nav class="footer__nav">
             <ul class="footer__list">
               <li class="footer__item"><a href="../pages/business.html" class="footer__link">Бизнес-съемка</a></li>
@@ -682,7 +710,6 @@
               </li>
               <li class="footer__item"><a href="../pages/about.html" class="footer__link">Обо мне</a></li>
               <li class="footer__item"><a href="../pages/rewiews.html" class="footer__link">Отзывы</a></li>
-              <li class="footer__item"><a href="../pages/blog.html" class="footer__link">Блог</a></li>
               <li class="footer__item"><a href="../pages/contacts.html" class="footer__link">Контакты</a></li>
             </ul>
           </nav>
@@ -700,6 +727,9 @@
     new WOW().init();
   </script>
   <script src="../libs/swiper/swiper-bundle.min.js"></script>
+  <script src="../libs/JustValidate/just-validate.production.min.js"></script>
+  <script src="../libs/inputmask/inputmask.min.js"></script>
+  <script src="../components/validate.js"></script>
   <script src="../components/rewiews-slider.js"></script>
   <script src="../components/price-slider.js"></script>
   <script src="../components/burger.js"></script>
