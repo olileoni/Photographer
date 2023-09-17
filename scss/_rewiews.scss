@@ -4,6 +4,9 @@
     &__title {
         max-width: 800px;
         margin-bottom: 40px;
+        @media (max-width: 700px) {
+            margin-bottom: 0;
+        }
     }
     &__inner {
         display: flex;
@@ -48,6 +51,9 @@
             padding-left: 10px;
             padding-right: 10px;
         }
+        @media (max-width: 665px) {
+           min-height: auto;
+        }
         &::before {
             content: '';
             position: absolute;
@@ -81,17 +87,17 @@
             max-width: 488px;
             min-height: 360px;
         }
-        @media (max-width: 735px) {
-            max-width: 100%;
-        }
     }
     &__image {
         position: relative;
         z-index: 2;
         &-img {
+            @media (max-width: $md3) {
+                margin-top: 30px;
+            }
             @media (max-width: 735px) {
                 width: 100%;
-                margin-bottom: 30px;
+                margin-bottom: 50px;
             }
             @media (max-width: 360px) {
                 margin-bottom: 50px;
@@ -128,14 +134,14 @@
         align-items: center;
         gap: 15px;
         margin-top: 40px;
-        @media (max-width: $md3) {
-            margin-top: 30px;
-        }
         &-name {
             color: rgba(30, 30, 30, 0.80);
             font-weight: 300;
             line-height: 140%;
             font-size: 14px;
+        }
+        @media (max-width: $md4) {
+            margin-bottom: 70px;
         }
     }
 }
@@ -160,21 +166,41 @@
 
 .reviews-slider {
     &__title {
-        padding-left: calc((100% - 1460px) / 2);
+        padding-left: calc((100% - 1440px) / 2);
+        @media (max-width: $md3) {
+            padding-left: 10px;
+        } 
     }
     &__inner {
         padding-left: calc((100% - 1460px) / 2);
     }
+    &__text {
+        p {
+            @media (max-width: $md2) {
+                padding-left: 10px;
+            }
+            @media (max-width: $md3) {
+                padding-right: 10px;
+            } 
+        }
+        @media (max-width: $md3) {
+            min-height: 600px;
+            margin-top: -145px;
+        }
+        @media (max-width: $md4) {
+            margin-top: -100px;
+        }
+    }
     &__btn {
         margin-top: 40px;
     }
-    &__signature {
- 
-        @media (max-width: 700px) {
-            margin-bottom: 152px;
-        }
-    }
    
+}
+
+.rewiews .container {
+    @media (max-width: $md4) {
+        padding-left: 0;
+    }
 }
 
 
@@ -186,6 +212,9 @@
     height: 50px;
     @media (max-width: 620px) {
         justify-content: center;
+    }
+    @media (max-width: $md3) {
+        padding-bottom: 30px;
     }
 }
 
@@ -211,11 +240,11 @@ gap: 10px;
 }
 
 .swiper-button-prev {
-    background-image: url('../assets/img/arrow-prev.png');
+    background-image: url('../assets/svg/arrow-prev.svg');
 }
 
 .swiper-button-next {
-    background-image: url('../assets/img/arrow-next.png');
+    background-image: url('../assets/svg/arrow-next.svg');
 }
 
 .swiper-button-prev::after,
@@ -248,10 +277,3 @@ gap: 10px;
 }
 }
 
-
-.line-third {
-    position: absolute;
-    bottom: -205%;
-    left: -5%;
-    z-index: 2;
-  }

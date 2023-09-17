@@ -202,6 +202,10 @@ main {
 position: absolute;
 top: 2%;
 left: 25%;
+stroke: $titlesColor;
+stroke-dasharray: 4000;
+stroke-dashoffset: 4000;
+animation: line 5s linear forwards;
 @media (max-width: 1500px) {
   top: 1.5%;
   left: 10%;
@@ -216,6 +220,10 @@ left: 25%;
   position: absolute;
   top: 46%;
   left: 23%;
+  stroke: $titlesColor;
+stroke-dasharray: 4000;
+stroke-dashoffset: 4000;
+animation: line 5s linear forwards;
   @media (max-width: 1500px) {
     top: 35%;
     left: 20%;
@@ -224,12 +232,41 @@ left: 25%;
     top: 35%;
     left: 5%;
   }
+  @media (max-width: $md4) {
+    display: none;
+  }
+}
+
+.line-second-sm {
+  display: none;
+  @media (max-width: $md4) {
+    display: block;
+    position: absolute;
+    top: 39%;
+    left: 4%;
+    stroke: $titlesColor;
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+  animation: line 5s linear forwards;
+  }
 }
 
 .line-third {
   position: absolute;
   top: -23%;
-  left: 0;
+  left: -5%;
+  stroke: $titlesColor;
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+  animation: line 5s linear forwards;
+  @media (max-width: $md3) {
+    left: -38%;
+    top: -45%;
+  }
+  @media (max-width: $md4) {
+    left: -131%;
+    top: -28%;
+  }
 }
 
 .line-fifth {
@@ -237,8 +274,30 @@ left: 25%;
   top: -10%;
   left:-10%;
   z-index: -1;
+  stroke: $titlesColor;
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+  animation: line 5s linear forwards;
   @media (max-width: 1500px) {
     top: -17%;
+  }
+  @media (max-width: $md3) {
+    display: none;
+  }
+}
+
+.line-fifth-md {
+  display: none;
+  @media (max-width: $md3) {
+    display: block;
+    position: absolute;
+    top: -10%;
+    left:-10%;
+    z-index: -1;
+    stroke: $titlesColor;
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 4000;
+    animation: line 5s linear forwards;
   }
 }
 
@@ -246,11 +305,21 @@ left: 25%;
   position: absolute;
   top: -75%;
   left: 23%;
+  stroke: $titlesColor;
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+  animation: line 5s linear forwards;
   @media (max-width: 1500px) {
    top: -95%;
   }
   @media (max-width: $md2) {
     top: -120%;
     left: 10%;
+  }
+}
+
+@keyframes line {
+  100% {
+    stroke-dashoffset: 0;
   }
 }

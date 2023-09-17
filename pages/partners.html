@@ -228,10 +228,10 @@
                     </div>
                 </div>
             </section>
-            <section class="call-form">
+            <section class="call-form wow fadeIn" data-wow-duration="2s">
                 <div class="container">
                     <div class="call-form__body">
-                        <form action="#" class="call-form__form">
+                        <form action="#" class="call-form__form wow fadeInLeft">
                             <h3 class="call-form__title">Заказать обратный звонок</h3>
                             <div class="call-form__inputs">
                                 <input type="text" class="call-form__input" placeholder="Имя">
@@ -242,16 +242,29 @@
                                 <p class="call-form__text">Нажимая «Отправить», вы соглашаетесь с <a href="#">политикой
                                         конфиденциальности</a></p>
                             </div>
+                            <svg class="line-fifth" xmlns="http://www.w3.org/2000/svg" width="1368" height="306"
+                                viewBox="0 0 1368 306" fill="none">
+                                <path opacity="0.2"
+                                    d="M717.037 305.545C777.045 274.85 880.803 168.223 842.402 93.1518C776.914 -34.8754 34.7394 -37.3616 1.47517 132.639C-37.9255 334.001 1171.11 172.821 1367.58 94.0682"
+                                    stroke="white" />
+                            </svg>
+                            <svg class="line-fifth-md" xmlns="http://www.w3.org/2000/svg" width="531" height="131"
+                                viewBox="0 0 531 131" fill="none">
+                                <path opacity="0.2"
+                                    d="M254.513 130.188C279.936 117.184 323.893 72.0108 307.625 40.2067C279.88 -14.0325 -34.5445 -15.0858 -48.637 56.9356C-65.3292 142.243 446.882 73.959 530.117 40.5949"
+                                    stroke="white" />
+                            </svg>
                         </form>
-                        <div class="call-form__image">
+                        <div class="call-form__image wow fadeIn">
                             <img src="../assets/img/form-image.jpg" alt="Заказать обратный звонок">
                         </div>
                     </div>
-                    <div class="call-form__connection connection-call-form">
+                    <div class="call-form__connection connection-call-form wow fadeInLeft">
                         <h3 class="connection-call-form__title">Как со мной связаться</h3>
                         <div class="connection-call-form__messengers">
                             <a href="tel:+79217468577"
-                                class="connection-call-form__item connection-call-form__item_tel">+7 (921)
+                                class="connection-call-form__item connection-call-form__item_tel">+7
+                                (921)
                                 746-85-77</a>
                             <a href="https://wa.me/79217468577" target="_blank"
                                 class="connection-call-form__item connection-call-form__item_whatsapp">Написать в
@@ -275,7 +288,7 @@
                                             fill="white" />
                                     </g>
                                     <defs>
-                                        <clipPath id="clip0_22_1616">
+                                        <clipPath>
                                             <rect width="32" height="32" fill="white"
                                                 transform="translate(0 -0.000976562)" />
                                         </clipPath>
@@ -290,13 +303,15 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__container">
-                    <a href="../index.html" class="logo-footer__link">
-                        <img src="../assets/svg/main-logo.svg" alt="Эдуард щербаков" class="logo-header__img">
-                        <div class="logo-footer__text">
-                            <p class="logo-footer__text-first">Фотограф</p>
-                            <p class="logo-footer__text-second">Эдуард щербаков</p>
-                        </div>
-                    </a>
+                    <div class="footer__logo logo-footer">
+                        <a href="../index.html" class="logo-footer__link">
+                            <img src="../assets/svg/main-logo.svg" alt="Эдуард щербаков" class="logo-header__img">
+                            <div class="logo-footer__text">
+                                <p class="logo-footer__text-first">Фотограф</p>
+                                <p class="logo-footer__text-second">Эдуард щербаков</p>
+                            </div>
+                        </a>
+                    </div>
                     <nav class="footer__nav">
                         <ul class="footer__list">
                             <li class="footer__item"><a href="../pages/business.html"

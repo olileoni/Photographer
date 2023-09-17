@@ -1,5 +1,8 @@
 .hero {
   padding-top: 65px;
+  @media (max-width: 320px) {
+    padding-top: 50px;
+  }
     &__container {
         display: flex;
         gap: 60px;
@@ -18,6 +21,9 @@
         @media (max-width: 2000px) {
             font-size: calc(22px + 50 * ((100vw - 320px) / (1600 - 320)));
         }
+        @media (max-width: 1440px) {
+          left: 6%;
+        }
         @media (max-width: 1160px) {
             top: 120px;
             span {
@@ -34,6 +40,9 @@
             span {
                 color:$titlesColor;
             }
+        }
+        @media (max-width: 320px) {
+          margin-top: 0;
         }
     }
     &__desc {
@@ -156,6 +165,7 @@
     }
     &__images-box {
         display: flex;
+        gap: 10px;
     }
     &__images-media {
         display: none;
@@ -171,6 +181,11 @@
           }
           @media (max-width: 720px) {
             max-width: 100%;
+          }
+          @media (max-width: 320px) {
+            position: relative;
+            margin-top: 39px;
+            z-index: -1;
           }
     }
     &__image_first {
@@ -197,6 +212,12 @@
 
 .business-title {
     top: 300px;
+    @media (max-width: 1920px) {
+     left: 14%;
+    }
+    @media (max-width: 1440px) {
+      left: 9%;
+     }
     @media (max-width: 1160px) {
       top: 110px;
     }

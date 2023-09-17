@@ -1,11 +1,11 @@
 .main-price {
-    padding-bottom: calc(80px + (190 - 80) * ((100vw - 320px) / (1600 - 320)));
+    padding-bottom: 80px;
     &__content {
         position: relative;
     }
     &__title {
         position: relative;
-        padding-top: 220px;
+        padding-top: calc(120px + (220 - 120) * ((100vw - 320px) / (1600 - 320)));
         text-align: center;
         margin-bottom: 30px;
     }
@@ -155,6 +155,18 @@
 
 .swiper-pagination-progressbar-fill {
     background: $titlesColor !important;
+}
+
+.main-price .container {
+    @media (max-width: $md3) {
+      padding-right: 0;
+    }
+}
+
+.price .container {
+    @media (max-width: $md3) {
+      padding-right: 0;
+    }
 }
 
 

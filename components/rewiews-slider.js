@@ -11,7 +11,7 @@ const swiper = new Swiper('.slider-reviews', {
       },
       clickable: true,
     },
-
+    loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
