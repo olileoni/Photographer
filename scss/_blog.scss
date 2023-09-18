@@ -25,6 +25,9 @@
             width: 100%;
         }
     }
+    @media (max-width: 1400px) {
+        max-width: 370px;
+    }
     @media (max-width: $md2) {
         max-width: 350px;
     }
