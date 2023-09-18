@@ -27,6 +27,20 @@ window.addEventListener('DOMContentLoaded', () => {
       '.price-slider-1',
       {
         spaceBetween: 20,
+        slidesPerView: 3,
+        pagination: {
+          type: 'progressbar',
+          el: '.swiper-scrollbar',
+          clickable: true,
+          draggable: true,
+        },
+      }
+    );
+    resizableSwiper(
+      '(max-width: 320px)',
+      '.price-slider-1',
+      {
+        spaceBetween: 20,
         slidesPerView: 1.5,
         pagination: {
           type: 'progressbar',
@@ -42,7 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
       '.price-slider-2',
       {
         spaceBetween: 20,
-        slidesPerView: 1,
+        slidesPerView: 2,
         pagination: {
           type: 'progressbar',
           el: '.swiper-scrollbar',
@@ -57,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
       '.price-slider-3',
       {
         spaceBetween: 20,
-        slidesPerView: 1,
+        slidesPerView: 2,
         pagination: {
           type: 'progressbar',
           el: '.swiper-scrollbar',
