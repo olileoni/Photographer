@@ -28,6 +28,9 @@
     @media (max-width: 1400px) {
         max-width: 370px;
     }
+    @media (max-width: 1024px) {
+        max-width: 470px;
+    }
     @media (max-width: $md2) {
         max-width: 350px;
     }

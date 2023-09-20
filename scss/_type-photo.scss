@@ -357,7 +357,9 @@ z-index: -1;
     }
 }
 
-.business__body {
+.business__body,
+.live__body,
+.reportage__body {
     @media (max-width: $md3)  {
         padding-bottom: 80px;
     }

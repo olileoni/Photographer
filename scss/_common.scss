@@ -261,11 +261,14 @@ animation: line 5s linear forwards;
   animation: line 5s linear forwards;
   @media (max-width: $md3) {
     left: -38%;
-    top: -45%;
+    top: -4%;
   }
   @media (max-width: $md4) {
-    left: -131%;
+    left: -80%;
     top: -28%;
+  }
+  @media (max-width: 330px) {
+    left: -140%;
   }
 }
 
