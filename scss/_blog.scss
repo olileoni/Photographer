@@ -2,11 +2,11 @@
     &__container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 60px;
+        justify-content: space-between;
         margin-bottom: calc(30px + (60 - 30) * ((100vw - 320px) / (1600 - 320)));
-        @media (max-width: 1500px) {
+        @media (max-width: 1380px) {
             gap: 20px;
+            justify-content: center;
         }
     }
     &__title {
@@ -19,26 +19,23 @@
 
 .card-blog {
     max-width: 440px;
+    flex: 1 0 33.333%;
     margin-bottom: 20px;
+    @media (max-width: 1380px) {
+        max-width: 32%;
+    }
+    @media (max-width: 1199px) {
+       flex: 1 0 50%;
+       max-width: 48%;
+    }
     img {
-        @media (max-width: 596px) {
+        @media (max-width: 1400px) {
             width: 100%;
         }
     }
-    @media (max-width: 1400px) {
-        max-width: 370px;
-    }
-    @media (max-width: 1024px) {
-        max-width: 470px;
-    }
-    @media (max-width: $md2) {
-        max-width: 350px;
-    }
-    @media (max-width: 757px) {
-        max-width: 270px;
-    }
     @media (max-width: 596px) {
         max-width: 100%;
+        flex: 0 0 100%;
     }
     &__title {
         color: $titlesColor;
@@ -56,5 +53,11 @@
         font-size: 14px;
         font-weight: 300;
         line-height: 140%;
+    }
+}
+
+.blog .container {
+    @media (max-width: 1200px) {
+       width: 100%;
     }
 }

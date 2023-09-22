@@ -24,15 +24,18 @@
             transition: 0.8s;
             z-index: 10;
             padding-top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
     &__list {
         display: flex;
         justify-content: space-evenly;
         @media (max-width: $md2) {
-            display: block;
+            flex-direction: column;
             text-align: center;
-            margin-bottom: 79px;
+            margin-top: auto;
         } 
     }
     &__item {
@@ -64,9 +67,11 @@
         &-media {
             display: none;
             @media (max-width: $md2) {
-                display: block;
+                display: flex;
+                flex-direction: column;
                 position: relative;
                 z-index: 20;
+                margin-top: auto;
             }
         }
     }

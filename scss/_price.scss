@@ -1,4 +1,8 @@
 .main-price {
+    @media (max-width: 1024px) {
+        padding-bottom: 120px;
+    }
+    p
     &__content {
         position: relative;
     }
@@ -22,8 +26,8 @@
         @media (max-width: $md2) {
             gap: 0;
         }
-        @media (max-width: $md3) {
-            padding-bottom: 120px;
+        @media (max-width: 1024px) {
+            padding-bottom: 30px;
         }
     }
     &__item {
