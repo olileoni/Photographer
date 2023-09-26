@@ -21,17 +21,32 @@
         @media (max-width: 2000px) {
             font-size: calc(22px + 50 * ((100vw - 320px) / (1600 - 320)));
         }
+        @media (max-width: 1800px) {
+         left: 10%;
+      }
+      @media (max-width: 1650px) {
+        left: 9%;
+     }
+     @media (max-width: 1460px) {
+        left: 7%;
+   }
         @media (max-width: 1440px) {
-          left: 6%;
+          left: 5%;
         }
+        @media (max-width: 1370px) {
+          left: 2%;
+        }
+        @media (max-width: 1320px) {
+          left: 1%;
+        }
+        @media (max-width: 1260px) {
+          max-width: 550px;
+       }
         @media (max-width: 1160px) {
             top: 120px;
             span {
               color: $titlesColor;
             }
-          }
-          @media (max-width: $md2) {
-            max-width: 550px;
           }
           @media (max-width: 720px) {
             position: static;
