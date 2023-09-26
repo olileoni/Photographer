@@ -21,12 +21,6 @@
         @media (max-width: 2000px) {
             font-size: calc(22px + 50 * ((100vw - 320px) / (1600 - 320)));
         }
-        @media (max-width: 1800px) {
-         left: 10%;
-      }
-      @media (max-width: 1650px) {
-        left: 9%;
-     }
      @media (max-width: 1460px) {
         left: 7%;
    }
@@ -34,20 +28,17 @@
           left: 5%;
         }
         @media (max-width: 1370px) {
-          left: 2%;
-        }
-        @media (max-width: 1320px) {
           left: 1%;
         }
-        @media (max-width: 1260px) {
-          max-width: 550px;
-       }
-        @media (max-width: 1160px) {
-            top: 120px;
-            span {
-              color: $titlesColor;
-            }
-          }
+        @media (max-width: 1024px) {
+          top: 130px;
+        }
+          @media (max-width: $md2) {
+            max-width: 550px;
+         }
+         @media (max-width: $md3) {
+         top: 149px;
+        }
           @media (max-width: 720px) {
             position: static;
             max-width: 100%;
@@ -73,9 +64,15 @@
             font-size: calc(20px + 3 * ((100vw - 320px) / (1600 - 320)));
         }
         @media (max-width: 1160px) {
-            padding-top: 200px;
+            padding-top: 260px;
             margin-bottom: 50px;
           }
+          @media (max-width: 1024px) {
+            padding-top: 170px;
+          }
+          @media (max-width: $md3) {
+            padding-top: 135px;
+           }
           @media (max-width: 720px) {
             padding-top: 30px;
             margin-bottom: 30px;
@@ -114,7 +111,10 @@
           }
           @media (max-width: 1160px) {
             position: static;
-            margin-top: 180px;
+            margin-top: 220px;
+          }
+          @media (max-width:  $md3) {
+           margin-top: 105px;
           }
           @media (max-width: 720px) {
             max-width: 100%;
@@ -185,6 +185,8 @@
     &__images-media {
         display: none;
         margin-top: 120px;
+ 
+
 
         @media (max-width: 1160px) {
             display: flex;
@@ -194,10 +196,14 @@
           @media (max-width: 830px) {
             max-width: 400px;
           }
+          @media (max-width: 1024px) {
+            margin-top: 0;
+          }
           @media (max-width: 720px) {
+            margin-top: 120px;
             max-width: 100%;
           }
-          @media (max-width: 320px) {
+          @media (max-width: $md4) {
             position: relative;
             margin-top: 39px;
             z-index: -1;
@@ -226,15 +232,15 @@
 }
 
 .business-title {
-    top: 300px;
-    @media (max-width: 1920px) {
-     left: 14%;
-    }
+    top: 220px;
     @media (max-width: 1440px) {
       left: 9%;
-     }
-    @media (max-width: 1160px) {
-      top: 110px;
+    }
+    @media (max-width: 1370px) {
+      left: 1%;
+    }
+    @media (max-width: $md3) {
+      top: 120px;
     }
 
 }
