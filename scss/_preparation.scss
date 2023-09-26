@@ -2,7 +2,6 @@
     padding-bottom: calc(70px + (280 - 70) * ((100vw - 320px) / (1600 - 320)));
     &__title {
         margin-bottom: 40px;
-        padding-top: 220px;
     }
     &__desc {
         color: $titlesColor;
