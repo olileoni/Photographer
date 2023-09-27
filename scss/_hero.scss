@@ -15,9 +15,6 @@
         position: absolute;
         top: 270px;
         z-index: 3;
-        span {
-            color: #fff;
-        }
         @media (max-width: 2000px) {
             font-size: calc(22px + 50 * ((100vw - 320px) / (1600 - 320)));
         }
@@ -25,7 +22,7 @@
         left: 7%;
    }
         @media (max-width: 1440px) {
-          left: 5%;
+          left: 1%;
         }
         @media (max-width: 1370px) {
           left: 1%;
@@ -180,7 +177,6 @@
     }
     &__images-box {
         display: flex;
-        gap: 10px;
     }
     &__images-media {
         display: none;
@@ -243,5 +239,98 @@
       top: 120px;
     }
 
+}
+
+.one {
+   color: #fff;
+   @media (max-width:1600px) {
+    color: $titlesColor;
+  }
+  @media (max-width:1366px) {
+    color: #fff;
+  }
+  @media (max-width:$md3) {
+    color: $titlesColor;
+  }
+
+}
+.two {
+  @media (max-width:1600px) {
+    color: #fff;
+  }
+  @media (max-width:820px) {
+    color: $titlesColor;
+  }
+}
+.three {
+  @media (max-width:820px) {
+    color: #fff;
+  }
+}
+.four {
+  @media (max-width:820px) {
+    color: $titlesColor;
+  }
+  @media (max-width:$md3) {
+    color: #fff;
+  }
+}
+
+
+
+.first {
+  color: #fff;
+  @media (max-width:1920px) {
+    color: $titlesColor;
+  }
+  @media (max-width:1600px) {
+    color: $titlesColor;
+  }
+  @media (max-width:1440px) {
+    color: #fff;
+  }
+  @media (max-width:1366px) {
+    color: $titlesColor;
+  }
+  @media (max-width:820px) {
+    color: $titlesColor;
+  }
+}
+.sec {
+  @media (max-width:1600px) {
+    color: #fff;
+  }
+  @media (max-width:834px) {
+    color: #fff;
+  }
+  @media (max-width:820px) {
+    color: $titlesColor;
+  }
+
+}
+.third {
+  @media (max-width:1920px) {
+    color: #fff;
+  }
+  @media (max-width:1600px) {
+    color: $titlesColor;
+  }
+  @media (max-width:1366px) {
+    color: #fff;
+  }
+  @media (max-width:834px) {
+    color: $titlesColor;
+  }
+}
+
+.fifth {
+  @media (max-width:820px) {
+    color: #fff;
+  }
+}
+.sixth {
+  @media (max-width:$md3) {
+    color: #fff;
+  }
 }
 
