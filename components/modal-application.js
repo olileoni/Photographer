@@ -1,5 +1,4 @@
 const applicationBtn = document.querySelector('.application__button');
-const staffBtn = document.querySelector('.staff-photo__btn');
 const modal = document.querySelector('.modal-application');
 const priceCards = document.querySelectorAll('.main-price__item');
 const priceCardsSecond = document.querySelectorAll('.price__item')
@@ -7,7 +6,6 @@ const modalClose = document.querySelector('.modal-close');
 const modalCloseBtn = document.querySelector('.modal-close__close');
 const closeBtn = document.querySelector('.modal-application__close');
 const submitBtn = document.querySelector('.modal-application__button');
-const body = document.body;
 
 priceCards.forEach((el) => {
     el.addEventListener('click', () => {
@@ -24,11 +22,6 @@ priceCardsSecond.forEach((el) => {
 })
 
 applicationBtn.addEventListener('click', () => {
-    modal.classList.add('open')
-    body.classList.add('lock');
-})
-
-staffBtn.addEventListener('click', () => {
     modal.classList.add('open')
     body.classList.add('lock');
 })
