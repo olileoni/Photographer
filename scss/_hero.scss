@@ -243,6 +243,9 @@
 
 .one {
    color: #fff;
+   @media (max-width:1680px) {
+    color: $titlesColor;
+  }
    @media (max-width:1600px) {
     color: $titlesColor;
   }
@@ -261,6 +264,9 @@
 
 }
 .two {
+  @media (max-width:1680px) {
+    color: #fff;
+  }
   @media (max-width:1600px) {
     color: #fff;
   }
@@ -343,6 +349,15 @@
 .sixth {
   @media (max-width:$md3) {
     color: #fff;
+  }
+}
+
+.five {
+  @media (max-width:1280px) {
+    color: #fff;
+  }
+  @media (max-width:1024px) {
+    color: $titlesColor;
   }
 }
 
